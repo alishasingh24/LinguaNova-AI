@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaNova AI | Smart Language Translator</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+<div class="top-bar">
+
+    <a href="index.html" class="home-btn">
+        <i class="fa-solid fa-house"></i> Home
+    </a>
+
+    <h2>Translation Studio</h2>
+
+</div>
+
+        <div class="language-section">
+
+            <div class="language-box">
+                <label for="source-language">From</label>
+                <select id="source-language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+
+            <button id="swap-btn" class="swap-btn">
+        ⇄
+    </button>
+
+            <div class="language-box">
+                <label for="target-language">To</label>
+                <select id="target-language">
+                    <option value="hi">Hindi</option>
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+
+        </div>
+
+    
+        <h3>Enter Text</h3>
+
+        <textarea
+            id="input-text"
+            placeholder="Type something here..."></textarea>
+
+        <p id="character-count">Characters : 0</p>
+
+  
+        <button id="translate-btn">
+            <i class="fa-solid fa-language"></i>
+
+             Translate
+        </button>
+        <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <p>Translating...</p>
+</div>
+
+
+        <h3>Translation</h3>
+
+        <textarea
+            id="output-text"
+            placeholder="Translation will appear here..."
+            readonly></textarea>
+
+
+        <div class="action-buttons">
+
+    <button id="copy-btn">
+        
+        <i class="fa-regular fa-copy"></i>
+
+Copy
+    </button>
+
+    <button id="speak-btn">
+        <i class="fa-solid fa-volume-high"></i>
+
+Speak
+    </button>
+
+</div>
+<section class="history-section">
+
+    <h3>🕒 Recent Translations</h3>
+
+    <ul id="history-list"></ul>
+
+</section>
+<div class="bottom-buttons">
+<button id="clear-history">
+🗑 Clear History
+</button>
+<button id="dark-btn">
+🌙 Dark Mode
+</button>
+</div>
+
+        
+        <p class="footer">
+          Made with ❤️ by Alisha Singh
+
+          <br>
+
+© 2026 LinguaNova AI
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
