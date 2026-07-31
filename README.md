@@ -69,7 +69,8 @@ LinguaNova-AI/
 - Favorite Translations
 - Download Translation
 - More Languages
-- 
+- Integrate Google Cloud Translation API for more accurate AI-powered translations.
+  
 ##👩‍💻 Author
 
 **Alisha Singh**
